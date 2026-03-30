@@ -39,4 +39,12 @@ public class Personaje {
     public void setEnergia(int energia) {
         this.energia = energia;
     }
+
+    public void entrenar(int x) {
+        if (x > 0) {
+            this.nivel += x;
+        } else {
+            System.out.println("No se puede entrenar 0 niveles o niveles negativos.");
+        }
+    }
 }
