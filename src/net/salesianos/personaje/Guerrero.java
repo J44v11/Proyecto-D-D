@@ -15,4 +15,9 @@ public class Guerrero extends Personaje {
         System.out.println("Te llamas: " + nombre + ", tienes: " + nivel + " niveles, tienes: " + energia
                 + " de energia y tu arma es: " + arma);
     }
+
+    public void ataquePesado() {
+
+        gastarEnergia(15);
+    }
 }
