@@ -6,14 +6,12 @@ public class Personaje {
     protected int nivel;
     protected int energia;
 
-
     public Personaje(String nombre, int nivel) {
         this.nombre = nombre;
         this.nivel = nivel;
         this.energia = 100;
     }
 
-    
     public String getNombre() {
         return nombre;
     }
@@ -22,7 +20,6 @@ public class Personaje {
         this.nombre = nombre;
     }
 
-
     public int getNivel() {
         return nivel;
     }
@@ -30,7 +27,6 @@ public class Personaje {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-
 
     public int getEnergia() {
         return energia;
@@ -45,6 +41,17 @@ public class Personaje {
             this.nivel += x;
         } else {
             System.out.println("No se puede entrenar 0 niveles o niveles negativos.");
+        }
+    }
+
+    public void descansar(int x) {
+        if (x > 0) {
+            this.energia += x;
+            if (this.energia > 100) {
+                this.energia = 100;
+            }
+        } else {
+            System.out.println("No se puede aumentar 0 niveles de energia ni energia negativa.");
         }
     }
 }
