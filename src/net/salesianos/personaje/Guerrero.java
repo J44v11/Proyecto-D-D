@@ -8,4 +8,11 @@ public class Guerrero extends Personaje {
         super(nombre, nivel);
         this.arma = arma;
     }
+
+    @Override
+    public void mostrarInfo() {
+
+        System.out.println("Te llamas: " + nombre + ", tienes: " + nivel + " niveles, tienes: " + energia
+                + " de energia y tu arma es: " + arma);
+    }
 }
