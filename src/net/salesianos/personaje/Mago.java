@@ -15,4 +15,9 @@ public class Mago extends Personaje {
 
         System.out.println("Tu nivel es el: " + nivel + " y su elemento es: " + elemento);
     }
+
+    public void ataqueElemental() {
+        
+        gastarEnergia(25);
+    }
 }
