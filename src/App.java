@@ -1,3 +1,4 @@
+import net.salesianos.personaje.Guerrero;
 import net.salesianos.personaje.Personaje;
 
 public class App {
@@ -9,6 +10,14 @@ public class App {
         viajero.entrenar(4);
         viajero.gastarEnergia(30);
         viajero.mostrarInfo();
+        Personaje.mostrarTotalPersonajes();
+
+        
+        Guerrero thorak = new Guerrero("Thorak", 5, "Hacha doble");
+
+        thorak.ataquePesado();
+        thorak.descansar(10);
+        thorak.mostrarInfo();
         Personaje.mostrarTotalPersonajes();
 
     }
