@@ -65,4 +65,8 @@ public class Personaje {
             System.out.println("No se puede gastar 0 niveles de energia o energia negativa.");
         }
     }
+
+    public void mostrarInfo() {
+        System.out.println("Te llamas: " + nombre + ", tienes: " + nivel + " niveles, y tienes: " + energia + " de energia");
+    }
 }
