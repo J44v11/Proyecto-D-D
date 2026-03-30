@@ -54,4 +54,15 @@ public class Personaje {
             System.out.println("No se puede aumentar 0 niveles de energia ni energia negativa.");
         }
     }
+
+    public void gastarEnergia(int x) {
+        if (x > 0) {
+            this.energia -= x;
+            if (this.energia < 0) {
+                this.energia = 0;
+            }
+        } else {
+            System.out.println("No se puede gastar 0 niveles de energia o energia negativa.");
+        }
+    }
 }
