@@ -9,4 +9,10 @@ public class Mago extends Personaje {
         super(nombre, nivel);
         this.elemento = elemento;
     }
+
+    @Override
+    public void mostrarInfo() {
+
+        System.out.println("Tu nivel es el: " + nivel + " y su elemento es: " + elemento);
+    }
 }
